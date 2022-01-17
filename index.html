@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <section class="banner">
+      <div class="content">
+        <div class="left-col">
+          <h2>Order today to get it in time for the big day</h2>
+          <p>with standard delivery</p>
+        </div>
+        <div class="right-col">
+          <div class="right-col-content">
+            <p>Order In</p>
+          </div>
+
+          <div class="tile-container" id="clockdiv">
+            <div class="tile">
+              <div class="tile-number" id="hours"></div>
+              <div class="tile-text">Hours</div>
+            </div>
+            <div class="tile">
+              <div class="tile-number" id="minutes"></div>
+              <div class="tile-text">Minutes</div>
+            </div>
+            <div class="tile">
+              <div class="tile-number" id="seconds"></div>
+              <div class="tile-text">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p onclick="dropDown()">
+          &#42;T&Cs apply
+          <span>^</span>
+        </p>
+
+        <p id="t&c" class="hidden" style="text-align: center">
+          &#42;For standard delivery order by midnight 20th December 2021. For
+          fastest delivery order by 11pm 22nd December 2021.
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

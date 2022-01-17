@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "GalanoGrotesque-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("http://images2.drct2u.com/repo/JDW/desktop/common/04-fonts/GalanoGrotesque/GalanoGrotesque-Regular-webfont.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "GalanoGrotesque-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("http://images2.drct2u.com/repo/JDW/desktop/common/04-fonts/GalanoGrotesque/GalanoGrotesque-SemiBold-webfont.woff")
+    format("woff");
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  font-family: "GalanoGrotesque-Regular";
+  background-image: url("https://sb.monetate.net/img/1/526/3841398.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  font-size: 14px;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-col {
+  text-align: center;
+  margin-right: 50px;
+}
+.left-col h2 {
+  font-family: "GalanoGrotesque-SemiBold";
+  width: 53%;
+  margin: 20px auto 0px auto;
+}
+.left-col p {
+  margin: 5px;
+  font-size: 16px;
+}
+.right-col {
+  display: flex;
+}
+.right-col .right-col-content {
+  position: relative;
+  margin-top: 28px;
+  margin-right: 20px;
+}
+.right-col p {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.tile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0px 5px;
+  text-align: center;
+}
+.tile-number {
+  font-family: "GalanoGrotesque-SemiBold";
+  font-size: 20px;
+}
+.footer {
+  text-align: center;
+}
+.footer p {
+  cursor: pointer;
+}
+.footer p span {
+  font-family: "GalanoGrotesque-SemiBold";
+}
+.hidden {
+  display: none;
+}
+.open {
+  display: block;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .content {
+    flex-direction: column;
+  }
+  .right-col .right-col-content {
+    margin-right: 90px;
+    padding-left: 45px;
+    margin-top: 16px;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  p {
+    font-size: 12px;
+  }
+  .left-col {
+    margin-right: 0px;
+  }
+  .left-col h2 {
+    font-family: "GalanoGrotesque-SemiBold";
+    width: 70%;
+  }
+  .right-col {
+    justify-content: space-evenly;
+  }
+  .right-col .right-col-content {
+    margin-right: 0px;
+    padding-left: 25px;
+    margin-top: 16px;
+  }
+  .tile {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .right-col p {
+    font-size: 12px;
+  }
+}
