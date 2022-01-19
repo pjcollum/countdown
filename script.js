@@ -29,9 +29,9 @@ function initializeClock(id, endDate) {
     function updateClock() {
         const t = getTimeRemaining(endDate);
 
-        hoursId.innerHTML = ('0' + t.hours).slice(-2);  //if one digit, place a zero in front
-        minutesId.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsId.innerHTML = ('0' + t.seconds).slice(-2);
+        hoursId.innerHTML = t.hours;  //if one digit, place a zero in front
+        minutesId.innerHTML = t.minutes;
+        secondsId.innerHTML = t.seconds;
 
         if (t.total <= 0) {                     //keeps timer at zero when countdown has been reached
            clearInterval(timeinterval);
